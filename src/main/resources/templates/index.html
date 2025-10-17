@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MINI SIEM PROJECT</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1 class="title">WELCOME MY MINI SIEM !!</h1>
+    <ul>
+        <li><a th:href="@{/logs}">LOGS DASHBOARD</a></li>
+        <li><a th:href="@{/alerts}">DETECTED LOGS DASHBOARD</a></li>
+        <li><a th:href="@{/logs_form}">CREATE YOUR LOGS</a></li>
+    </ul>
+</body>
+</html>

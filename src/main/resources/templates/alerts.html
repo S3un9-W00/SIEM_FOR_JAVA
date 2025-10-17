@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ALERTS DASHBOARD</title>
+</head>
+<body>
+    <h1>ALERTS DASHBOARD</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>IP</th>
+            <th>BIO</th>
+            <th>TIME</th>
+        </tr>
+        <tr th:each="alert : ${alerts}">
+            <td th:text="${alert.id}"></td>
+            <td th:text="${alert.ip}"></td>
+            <td th:text="${alert.bio}"></td>
+            <td th:text="${alert.time}"></td>
+        </tr>
+    </table>
+</body>
+</html>

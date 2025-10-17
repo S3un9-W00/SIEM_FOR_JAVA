@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGS DASHBOARD</title>
+</head>
+<body>
+    <h1>LOGS DASHBOARD</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>IP</th>
+            <th>BIO</th>
+            <th>TIME</th>
+        </tr>
+        <tr th:each="log : ${logs}">
+            <td th:text="${log.id}"></td>
+            <td th:text="${log.ip}"></td>
+            <td th:text="${log.bio}"></td>
+            <td th:text="${log.time}"></td>
+        </tr>
+    </table>
+</body>
+</html>
